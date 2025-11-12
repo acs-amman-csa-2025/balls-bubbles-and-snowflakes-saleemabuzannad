@@ -66,7 +66,7 @@ class Ball {
     // Setters that you need go here - by default, only colors
 
     public void setColors(int fill, int border) {
-        borderColor = border;
+        borderColor = border; 
         fillColor = fill;
     }
 
