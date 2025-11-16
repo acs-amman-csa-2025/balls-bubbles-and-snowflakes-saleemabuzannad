@@ -20,7 +20,7 @@ class Bubble {
         borderColor = s.color(0, 0, 0);
     }
 
-     public Bubble(Sketch sketch, float radius, float x, float y, float xspeed, float yspeed) {
+     public Bubble(Sketch sketch, float radius, float x, float y, float xspeed, float yspeed) {//this is the constructer wich makes the default Bubble and can also be alterd to make diffrent kinds of Bubble
         this.s = sketch;
         this.radius = radius;
         this.x = x;

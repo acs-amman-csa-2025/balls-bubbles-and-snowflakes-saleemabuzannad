@@ -4,7 +4,7 @@ import processing.core.PApplet;
 public class Sketch extends PApplet {
 
     /** Represents one ball */
-    private Ball ball1;
+    private Ball ball1;//these are where I made all of the balls bubbles and snowflakes 
     private Ball ball2;
     private Ball ball3;
     private Ball ball4;
@@ -25,7 +25,7 @@ public class Sketch extends PApplet {
      * window is created.
      */
     public void settings() {
-        size(500,500);
+        size(500,500);// this is the size of the world 
     }
 
     /**
@@ -33,18 +33,19 @@ public class Sketch extends PApplet {
      * this to initialize the sketch.
      */
     public void setup() {
-        ball1 = new Ball(this);
-        ball2 = new Ball(this, 10, 50, 50, 12, 13);
+        ball1 = new Ball(this);//the default ball 
+        ball2 = new Ball(this, 10, 50, 50,2, 13);
         ball3 = new Ball(this,10,40,20,30,40);
         ball4 = new Ball(this,12,23,34,45,56);
-        ball2.setColors(color(213,112,86), color(0));
-        ball3.setColors(color(323,232,323), color(0));
-        ball4.setColors(color(167,131,99), color(0));
-        bubble1 = new Bubble(this);
+        ball1.setColors(color(random(0,255), random(0,255), random(0,255)),0);//this makes random colored balls 
+        ball2.setColors(color(random(0,255), random(0,255), random(0,255)),0);
+        ball3.setColors(color(random(0,255), random(0,255), random(0,255)),0);
+        ball4.setColors(color(random(0,255), random(0,255), random(0,255)),0);
+        bubble1 = new Bubble(this);//the default Bubble 
         bubble2 = new Bubble(this,12,5,5,2,-2);
         bubble3 = new Bubble(this,10,6,7,2,-4);
         bubble4 = new Bubble(this,21,8,9,2,-6);
-        snowflake1 = new Snowflake(this);
+        snowflake1 = new Snowflake(this);//the default snowflake 
         snowflake2 = new Snowflake(this,10,2,3,2,-1);
         snowflake3 = new Snowflake(this,8,3,5,2,-1);
         snowflake4 = new Snowflake(this,21,2,67,2,-1);
@@ -63,7 +64,7 @@ public class Sketch extends PApplet {
 
     public void draw() {
        background(180, 180, 255);
-        ball1.draw();
+        ball1.draw();//here Is where the draw and move methods are used to make the balls bubbels and snowflakes move the way they are and how the look (draw)
         ball1.move();
         ball2.draw();
         ball2.move();

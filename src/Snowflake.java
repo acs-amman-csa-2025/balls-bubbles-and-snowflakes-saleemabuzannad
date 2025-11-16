@@ -1,13 +1,13 @@
 class Snowflake {
 
-    private Sketch s;
+    private Sketch s;//this is the instance variable and its what gives the snowflake its attributes 
     private float radius;
     private float x;
     private float y;
     private float xSpeed;
     private float ySpeed;
 
-public Snowflake(Sketch sketch, float radius, float x, float y, float xspeed, float yspeed) {
+public Snowflake(Sketch sketch, float radius, float x, float y, float xspeed, float yspeed) {//this is the constructer wich makes the default snow flake and can also be alterd to make diffrent kinds of snowflakes 
         this.s = sketch;
         this.radius = radius;
         this.x = x;
@@ -18,8 +18,8 @@ public Snowflake(Sketch sketch, float radius, float x, float y, float xspeed, fl
     public Snowflake(Sketch sketch) {
         s = sketch;
         radius = 20;
-        x = s.random(s.width);
-        y = s.random(radius);
+        x = 100;
+        y = 100;
         xSpeed = 1;
         ySpeed = -1;
         
