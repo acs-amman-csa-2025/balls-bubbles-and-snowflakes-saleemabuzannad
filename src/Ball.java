@@ -36,7 +36,7 @@ class Ball {
 
     /** Fully specified constructor to allow changes to size, position, speed */
     /** Does NOT allow changing color! Need to use setColors() for that. */
-    public Ball(Sketch sketch, float radius, float x, float y, float xspeed, float yspeed) {
+    public Ball(Sketch sketch, float radius, float x, float y, float xspeed, float yspeed) {//this is the constructer wich makes the default Ball and can also be alterd to make diffrent kinds of Ball
         this.s = sketch;
         this.radius = radius;
         this.x = x;
@@ -66,7 +66,7 @@ class Ball {
     // Setters that you need go here - by default, only colors
 
     public void setColors(int fill, int border) {
-        borderColor = border;
+        borderColor = border; 
         fillColor = fill;
     }
 
